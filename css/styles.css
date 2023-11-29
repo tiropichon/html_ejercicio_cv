@@ -16,7 +16,7 @@ body {
     line-height: 1.3em;
     font-size: 16px; /* 1 rem = 10px */
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--marron) 140%);
 }
 
 header {
@@ -41,7 +41,7 @@ a {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 1.3em;
     margin: 2rem 2rem 1rem 2rem;
     padding-top: 2rem;
@@ -175,5 +175,11 @@ hr {
 
 /* footer */
 .footer {
+    background-color: var(--grisOscuro);
+    color: white;
+    height: 2rem;
+    margin: 0 auto;
+    border-radius: .5em;
     text-align: center;
+    line-height: 2;
 }
