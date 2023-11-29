@@ -1,7 +1,8 @@
 :root{
     --blanco: #ffffff;
     --grisClaro: #DFE9F3;
-    --marron: #892110
+    --marron: #892110;
+    --grisOscuro: #3c3c3c;
 }
 
 html{
@@ -18,40 +19,93 @@ body {
     background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
 }
 
+header {
+    background-color: var(--grisOscuro);
+    color: white;
+    height: auto;
+    margin: 0 auto;
+    border-radius: .5em;
+}
+
+.contenedorIconos {
+    background-color: var(--grisOscuro);
+    color: white;
+    height: 14rem;
+    margin: 0 auto;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 h1 {
     font-size: 2rem;
     line-height: 1.3em;
-    margin: 0 0 2rem 0;
+    margin: 2rem 2rem 1rem 2rem;
+    padding-top: 2rem;
     font-weight: 300;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);*/
     border-radius: .5em;
     width: 100%;
-    text-align: center;
-    background-color: var(--marron);
-    color: var(--blanco);
+    text-align: left;
 }
 
-fieldset{
+h2 {
+    font-size: 1.6rem;
+    line-height: 1.3em;
+    margin: 1rem 2rem 1rem 2rem;
+    font-weight: 300;
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);*/
     border-radius: .5em;
-    margin: 0.5rem 0 0.5rem 0;
-    border-color: black;
+    width: 100%;
+    text-align: left; 
 }
 
-.fieldInline {
+h3 {
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    margin: 1rem 2rem 1rem 2rem;
+    font-weight: 300;
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);*/
+    border-radius: .5em;
+    width: 100%;
+    text-align: left;
+}
+
+.foto {
+    height: 13rem;
+    width: 13rem;
+    float: right;
+    margin: 2rem 2rem 2rem 2rem;
+    border-radius: .5em;
+}
+
+.icono {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 1rem 0 1rem 2rem;
+    position: relative;
     display: inline-block;
-    width: 94%;
 }
 
-.datosPersonales {
-    width: 100%;
+main {
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    margin: 1rem 1rem 1rem 1rem;
+    font-weight: 300;
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);*/
+    border-radius: .5em;
+    width: 99%;
 }
 
 .contenedor {
-    max-width: 100rem;
+    max-width: 120rem;
     /*height: 95%;*/
-    width: 30%;
+    width: 80%;
     height: auto;
-    margin: 5rem 35% 5rem 35%;
+    margin: 5rem 10% 5rem 10%;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     background-color: var(--grisClaro);
 }
@@ -63,49 +117,60 @@ fieldset{
     border-radius: 1rem;
 }
 
-.boton {  
-    display: inline-block;
-    margin-left: auto;
-    padding: 15px 30px;
-    border: none;
-    background-color: purple;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 30px;
-    width: 49.5%;
-}
-
-.boton:hover {
-    background-color: #9867C5;
-    transform: translateY(-2px);
-}
-
-.comentario {
-    height: 10%;
-    width: 99%;
-}
-
-.label {
-    width: 98%;
-    margin: 0.5rem 0 0.5rem 0;
-    height: 2rem;
-}
-
-.input {
-    width: 98%;
-    margin: 0.5rem 0 0.5rem 0;
-    height: 2rem;
+.titulo {
+    font-size: 2rem;
+    line-height: 1.3em;
+    margin: 0.5rem 0 1rem 0;
+    padding-top: 2rem;
+    font-weight: 300;
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);*/
     border-radius: .5em;
+    width: 100%;
+    text-align: left;
 }
 
-.fecha {
-    text-align: right;
-    width: 98%;
-    margin: 0.5rem 0 0.5rem 0;
-    height: 2rem;
+.nombreEmpresa {
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    font-weight: 300;
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);*/
     border-radius: .5em;
+    width: 100%;
+    text-align: left;
+}
+
+.nombrePuesto {
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    font-weight: 700;
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);*/
+    border-radius: .5em;
+    width: 100%;
+    text-align: left;
+}
+
+.cargos {
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    font-weight: 300;
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);*/
+    border-radius: .5em;
+    width: 100%;
+    text-align: left;  
+}
+
+.info {
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    font-weight: 300;
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);*/
+    border-radius: .5em;
+    width: 100%;
+    text-align: left;   
+}
+
+hr {
+    width: 98%;
 }
 
 /* footer */
