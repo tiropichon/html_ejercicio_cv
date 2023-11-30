@@ -16,7 +16,7 @@ body {
     line-height: 1.3em;
     font-size: 16px; /* 1 rem = 10px */
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--marron) 140%);
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 140%);
 }
 
 header {
